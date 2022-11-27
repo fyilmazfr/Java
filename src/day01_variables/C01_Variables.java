@@ -6,6 +6,7 @@ public class C01_Variables
         System.out.println("hello Java,hello world");
         System.out.println("hello ilknur seni cok seviyorummm ve cocuklarimi" );
 
+
    }
 }
 
