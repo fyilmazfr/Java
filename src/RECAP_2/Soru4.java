@@ -9,17 +9,18 @@ public class Soru4 { /* 0~9 arasindaki sayilari cevirebilen bir java programi ya
          */
     public static void main(String[] args) {
 
-        int sayi=5;
-        String sonuc="";
-        if (sayi>=0 && sayi<=9) {
-            if (sayi==9){
+        int sayi = 5;
+        String sonuc = "";
+        if (sayi >= 0 && sayi <= 9) {
+            if (sayi == 9) {
                 System.out.println("dokuz");
-                if (sayi==8){
+                if (sayi == 8) {
                     System.out.println("sekiz");
 
                 }
+            }
+
+
         }
-
-
     }
 }
