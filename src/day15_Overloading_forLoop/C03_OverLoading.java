@@ -22,3 +22,4 @@ public class C03_OverLoading {
     public static void toplam(double i, double i1) { // parametrreleri degisritdik ve java itiraz etmedi
         System.out.println("iki degerin toplami :" + (i + i1));
     }}
+// paramete sayisi ve parametre turleri ayni olan 2 method olusturamayiz
