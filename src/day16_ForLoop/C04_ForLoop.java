@@ -2,7 +2,7 @@ package day16_ForLoop;
 
 import java.util.Scanner;
 
-public class C04_ForLoop {// soru 10:kullanicidan 100 den kucuk bir tam sayi isteyin
+public class C04_ForLoop {// soru 6:kullanicidan 100 den kucuk bir tam sayi isteyin
     // 1 den baslayarak girilen sayiya kadar tum sayilari yazdirin
     //ancak sayi 3 un kati ise "java"
     // sayi 5 in kati ise syi yerine "guzeldir"
