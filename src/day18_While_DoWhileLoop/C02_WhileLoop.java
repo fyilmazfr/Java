@@ -1,3 +1,5 @@
+package day18_While_DoWhileLoop;
+
 public class C02_WhileLoop {
     //kullanicidan bir sayi alin ve bu sayinin rakamlari toplaminui yazdirin
     public static void main(String[] args) {
