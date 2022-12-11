@@ -2,7 +2,7 @@ package EKSTRA_SORULAR;
 
 import java.util.Scanner;
 
-public class C08 {// //herhangi bir kelimenin içinde kaç tane sesli harf olduğunu bulacağız.
+public class C08_sesliharf {// //herhangi bir kelimenin içinde kaç tane sesli harf olduğunu bulacağız.
 
     public static void main(String[] args) {
         Scanner scan=new Scanner(System.in);
