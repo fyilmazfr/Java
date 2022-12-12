@@ -10,6 +10,7 @@ public class C15 {// Bu örneğimizde Diziler 3 sayısının KatlarınıYazdıra
         int sayi= scan.nextInt();
         for (int i = 0; i <100 ; i++) {
             if (i%3==0){
+
                 System.out.print(i+",");
 
         }
