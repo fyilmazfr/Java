@@ -19,10 +19,7 @@ public class C02_EnuzunveKisaKelime {/*verilen bir string bir array'de en uzun v
                 if (isimler[i].length()<enKisaKelime.length()){
                     enKisaKelime=isimler[i];
                 }
-
-        }
-
-
+            }
         }
         System.out.println("array'deki en uzun kelime:"+enUzunKelime);
         System.out.println("Array'deki en kisa kelime:"+enKisaKelime);
