@@ -12,7 +12,8 @@ public class C01_MaxSayiyiBulma {
 
     public static void maxSayiyiYazdir(int[] sayilar) {
         int maxSayi=sayilar[0];//buraya neden deger atatdik?
-        //buraya 0'i atadik cunku en kucuk sayimi 0 olacak ve java her defasinda 0 dan buyuk sayilari kontrol edecek asagidaki forLoop sayesinde
+        //buraya 0'inci indexi atadik cunku ve java her defasinda
+        // sayilari kontrol edecek asagidaki forLoop sayesinde
         for (int i = 1; i <sayilar.length ; i++) {//bir ustte i'yi 0 olarak atadigimiz icin for loop da i 1den baslasin
             if (sayilar[i]>maxSayi){// eger sayilarin i'nin indexi maxsayi'dan buyukse
                 maxSayi=sayilar[i];//ozaman i'deki index maxsayi olsun,yani yeni degerimiz olsun.
