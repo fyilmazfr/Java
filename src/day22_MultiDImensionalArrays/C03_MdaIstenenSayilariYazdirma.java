@@ -17,6 +17,7 @@ sayilarin toplamini bulunuz
             }
 
         }
-        System.out.println("istenenToplam:" + istenenToplam);
+        System.out.println("istenenToplam:" + istenenToplam);// 1'in 1'i=1, 2'nin 2 si =5,3'un 3 u =6
+        //toplami 12 eder
     }
 }
