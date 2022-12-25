@@ -3,7 +3,7 @@ package day23_MultiDImensionalArrays;
 import java.util.ArrayList;
 import java.util.List;
 
-public class C03_indexOf {
+public class C03_Indexof_Lastindexof {
     public static void main(String[] args) {
         List<String> urunler=new ArrayList<>();//arrayliste'si stringlerden olussun ve adi urunler olsun
         urunler.add("nutella");
@@ -23,7 +23,7 @@ public class C03_indexOf {
         System.out.println(urunler.lastIndexOf("ikram"));//4 yazdirir dikkat cunku sondan basladi ve
         // ilk gordugu ikramin indexini verdi.
 
-     //olmayan bir elemani arartirsak?
+        //olmayan bir elemani arartirsak?
         System.out.println(urunler.indexOf("hobby"));//-1 yazdiracak
         System.out.println(urunler.lastIndexOf("hobby"));//-1 yazdiracak
 
