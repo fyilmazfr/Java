@@ -9,7 +9,7 @@ public class C02_ArraydenListolusturma {/*icinde 200 tane 1000 den kucuk pozitif
     kullanicidan bir sayi isteyin listede var olup olmadigini kullaniciya yazalim*/
 
     public static void main(String[] args) {
-        Random rnd = new Random();//scanner gibi olusturdum
+        Random rnd = new Random();//scanner gibi olusturdum,
         int sayi = 0;
         List<Integer> sayiListesi = new ArrayList<>();
 
