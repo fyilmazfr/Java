@@ -31,6 +31,6 @@ public class Q01_ForLoop {/*
                 }
             }
 
-        } else System.out.println("tek karakter giriniz");
+        } else System.out.println("tek karakter giriniz");// for dongusunun disi
     }
 }
