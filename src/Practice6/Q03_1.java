@@ -2,22 +2,25 @@ package Practice6;
 
 import java.util.Scanner;
 
-public class Q03_DoWhileLoop {/*kullanicidan x girilene kadar program caliisyor yazan ve
+public class Q03_1 {/*kullanicidan x girilene kadar program caliisyor yazan ve
 x girildiginde ise program bitti yazan programi yaziniz*/
 
     public static void main(String[] args) {
-        Scanner Scan=new Scanner(System.in);
+        Scanner scan=new Scanner(System.in);
         String str="";
-        do {
 
+        do {
             System.out.println("lutfen bir string giriniz");
-            str= Scan.nextLine();
+           str= scan.nextLine();
             System.out.println("program calisiyor");
 
-        }while (!str.equalsIgnoreCase("x"));//x'e esit olamayana kadar calis,kucuk buyuk harf'iignore
-        //case yaparak goz ardi ettik
+        }while (!str.equalsIgnoreCase("x"));
         System.out.println("program bitti");
-
-
     }
+
+
+
+
+
+
 }
