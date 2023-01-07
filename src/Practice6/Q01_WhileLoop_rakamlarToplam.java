@@ -14,7 +14,7 @@ public class Q01_WhileLoop_rakamlarToplam {//girilen sayinin basamaklarindaki ra
         while (sayi>0){
             birlerbasamagi=sayi%10;
             rakamlarToplami+=birlerbasamagi;
-            sayi=sayi/10;
+            sayi/=10;
 
 
         }
