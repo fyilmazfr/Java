@@ -6,8 +6,12 @@ public class Q07_Arrays {/*verilen arrayde toplamlari istenen degere esit olan s
     bir method yaziniz , asagida istenen toplam deger 9 olsun.*/
 
     public static void main(String[] args) {
-        int [] arr={5,7,-6,4,2,15,3,8,1};
-        int istenenToplam=9;
+        int[] arr = {5, 7, -6, 4, 2, 15, 3, 8, 1};
+        int istenenToplam = 9;
+        arrMethod(arr, istenenToplam);
+    }
+
+        public static void arrMethod(int[] arr, int istenenToplam) {
 
 
         for (int i = 0; i < arr.length ; i++) {
@@ -23,4 +27,7 @@ public class Q07_Arrays {/*verilen arrayde toplamlari istenen degere esit olan s
         }
 
     }
-}
+
+
+    }
+
