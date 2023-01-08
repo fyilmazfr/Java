@@ -3,7 +3,7 @@ package Practice6;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Q08_Arrays {/*kullanicidan aldigimiz 8elemanli arrayin icinde kac tane 3'e bolunebilen sayi vardir
+public class Q08_ArraysOlusturma {/*kullanicidan aldigimiz 8elemanli arrayin icinde kac tane 3'e bolunebilen sayi vardir
 negatif sayilarda dahil olsun */
 
     //ben burda array'in uzunlugunu en basta kendim belirledim
