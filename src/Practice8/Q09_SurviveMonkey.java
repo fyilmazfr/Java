@@ -5,7 +5,7 @@ ve bu maymun toplamda kac gun yasayabilir*/
 
     public static void main(String[] args) {
         int numberofBananes=165;
-        int survivalDays=0;
+        int survivalDays=0;//0. gun olmaz BURAYA 1 yazilmali
         boolean monkeyAlive=true;
 
 

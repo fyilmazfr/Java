@@ -2,7 +2,7 @@ package day22_MultiDImensionalArrays;
 
 import java.util.Arrays;
 
-public class C01_MultiDimensionalArrays {/*tek katli arrayler'de array'i yazdiramiyoruz.cunku array non primitive data
+public class  C01_MultiDimensionalArrays {/*tek katli arrayler'de array'i yazdiramiyoruz.cunku array non primitive data
 turudur ve her nonprimitive data direk yazdirilamayabilir ANCAK array'in icerisindeki elementleri direk yazdirabiliyorduk
 cunku genelde primitive data turu veya String elementler kullaniyorduk.
 MDA'daen dikkat edecegimiz konu ulasmak istedigimiz elementin bir array mi yoksa primitive data mi oldugudur.*/

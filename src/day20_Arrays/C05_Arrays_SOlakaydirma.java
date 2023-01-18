@@ -9,9 +9,9 @@ public class C05_Arrays_SOlakaydirma {// VERILEN 3 ELEMANLI BIR ARRAY'in
         int arr[]={1,2,3,4,5};// burayi degistirebiliriz
         int temps=arr[0];// son degri buraya atamak icin
         for (int i = 0; i < arr.length-1 ; i++) {
-            arr[i]=arr[i+1];
-        }
-        arr[arr.length-1]=temps;// her defasinda 0'inci indeksi yani temp'i arr'ye son indekse  ata
+            arr[i]=arr[i+1];// ornegin 2'yi 1'e , 3'u 2'ye , 4'u 3'e atasin ...
+        }//loop bittikten sonra ;
+        arr[arr.length-1]=temps;// her defasinda 0'inci indeksi(yani 1 'i) yani temp'i arr'ye son indekse  ata
         System.out.println(Arrays.toString(arr));
 
         //yukarida degistirdigimiz arrayi ilk duruma getirmek icin saga kaydiralim

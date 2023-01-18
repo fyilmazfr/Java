@@ -1,6 +1,6 @@
 package day21_Arrays;
 
-public class C01_MaxSayiyiBulma {
+public class  C01_MaxSayiyiBulma {
     public static void main(String[] args){
         //VERILEN BIR int arraydaki en buyuk sayiyi yazdiran bir method olusturun.
         int []sayilar={3,5,7,1,9,5,2};

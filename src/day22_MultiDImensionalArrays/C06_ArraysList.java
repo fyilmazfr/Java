@@ -11,7 +11,7 @@ arrayList de ise <> diamonde (elmas ) kullaniriz.
         List<String> isimler=new ArrayList<>();// ArrayList yazmak zorundayiz
         System.out.println(isimler);//direk isimler yazmamiz yetiyor java bunu yazdirir
         //bir list'e eleman eklemek istersek
-        isimler.add("fatih"); // fatih'i eklemis olduk bize tru yada false donecektir
+        isimler.add("fatih"); // fatih'i eklemis olduk bize tru yada false donecektir,eklendi yada eklenmedi mantigiyla
 
         System.out.println(isimler.add("melih"));//true doner
         System.out.println(isimler);//[fatih, melih] listeye ekledi

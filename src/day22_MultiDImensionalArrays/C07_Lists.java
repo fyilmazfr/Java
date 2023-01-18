@@ -3,7 +3,7 @@ package day22_MultiDImensionalArrays;
 import java.util.ArrayList;
 import java.util.List;
 
-public class C07_Lists {
+public class  C07_Lists {
     public static void main(String[] args) {
         List<Integer> sayilar=new ArrayList<>();//list primitive data turlerini kabul etmez bu yuzden buyuk harfler
         //ile yazdik, alt enter ile import yaptik yoksa altini kirmizi cizer

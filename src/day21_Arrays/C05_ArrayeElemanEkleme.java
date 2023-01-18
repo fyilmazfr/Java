@@ -2,7 +2,8 @@ package day21_Arrays;
 
 import java.util.Arrays;
 
-public class C05_ArrayeElemanEkleme {// verilen bir array'e yeni bir element ekleyen method olusturun
+public class
+C05_ArrayeElemanEkleme {// verilen bir array'e yeni bir element ekleyen method olusturun
 
     public static void main(String[] args) {
         String [] sinifListesi={"meva","melih","fatih","ilknur"};

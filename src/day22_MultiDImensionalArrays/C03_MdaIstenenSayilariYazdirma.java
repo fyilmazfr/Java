@@ -18,6 +18,7 @@ sayilarin toplamini bulunuz
 
         }
         System.out.println("istenenToplam:" + istenenToplam);// 1'in 1'i=1, 2'nin 2 si =5,3'un 3 u =6
+        //cunku length kelle sayar buyuzden 1,2,3 diye sayar
         //toplami 12 eder
     }
 }
