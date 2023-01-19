@@ -11,7 +11,7 @@ public class soru1 {
 
         for (String each : arr) {
 
-            System.out.print(each + " ");
+            System.out.print(each + " ");//yazdirip kontrol ettirelim
             if (each.equals("tom"))
                 break;
 
@@ -19,6 +19,7 @@ public class soru1 {
         }
 
     }
+
 
 
 
