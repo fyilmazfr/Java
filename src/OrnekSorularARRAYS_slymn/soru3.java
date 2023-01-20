@@ -1,6 +1,7 @@
 package OrnekSorularARRAYS_slymn;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.Scanner;
 
 public class soru3 {
@@ -30,12 +31,12 @@ public class soru3 {
 
 
         int[] xrr = {0, 2, 3, 0, 12, 0, 4, 8, 8, 8, 0, 0};
-        for (int i = 0; i < xrr.length; i++) {
+        for (int i = 0; i < xrr.length; i++) {//for each ile de cozulebilir bu soru
             if (xrr[i] == sayi) {
                 sayac++;
             }
-
         }
         System.out.println("girilen sayi " + sayac + " " + " kez kullanilmistir");
-    }
-}
+
+
+    }}
