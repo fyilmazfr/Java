@@ -1,6 +1,6 @@
 package OrnekSorularARRAYS_slymn;
 
-public class soru_ArraysList {//soru; bir tane mda olusturunuz
+public class soru_Arrays_fori {//soru; bir tane mda olusturunuz
     //bu array deki tum sayilarin toplamini veren kodu yaziniz
     public static void main(String[] args) {
         int [][] arr={{1,2,3,4},{4,6},{8,7}};
