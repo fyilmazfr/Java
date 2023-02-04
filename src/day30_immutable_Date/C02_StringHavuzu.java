@@ -18,6 +18,9 @@ public class C02_StringHavuzu {
         System.out.println(str2.equals(str4));//true
         System.out.println(str2==str4);//false
 
+        System.out.println("s1-s4"+str1.equals(str4));// true
+        System.out.println("s1-s4"+ (str1==str4));//true
+
         String str5="Ali Can";
         String str6=str1;
 
