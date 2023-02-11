@@ -37,7 +37,10 @@ public class C02_Varargs {
           girilen sayilarin toplami :30
 
          */
-
+//notlar
+// * varrags dan sonra varrangs olmaz cte verir
+        //VARRANGS dan sonra parametre olmaz CTE verir
+        //varrangs dan sonra
 
     }
 }
