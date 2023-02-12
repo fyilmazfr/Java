@@ -34,3 +34,4 @@ public class Isci extends Personel{
 2.PARENT CLASS4DAKI OZELLIKLERDEN BAZILARINI KENDILERINE UYARLAYABILIR
 3.parent class'da olmayan bazi yeni ozellikler olusturabilir
 not; parent class'daki ozelliklerden hicbirini reddedemez ama degistirebilir
+*/
