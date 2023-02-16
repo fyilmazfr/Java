@@ -31,7 +31,7 @@ public class Isci extends Personel{
     }
 }/* BIR CLASS BASKA BIR CLASS'I PARENT EDINDIGINDE
 1.parent class'daki tum ozelliklere (variable+method) otomatik sahip olur
-2.PARENT CLASS4DAKI OZELLIKLERDEN BAZILARINI KENDILERINE UYARLAYABILIR
+2.PARENT CLASS'DAKI OZELLIKLERDEN BAZILARINI KENDILERINE UYARLAYABILIR
 3.parent class'da olmayan bazi yeni ozellikler olusturabilir
 not; parent class'daki ozelliklerden hicbirini reddedemez ama degistirebilir
 */

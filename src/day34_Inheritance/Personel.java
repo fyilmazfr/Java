@@ -4,6 +4,8 @@ public class Personel {
     /* EGER PARENT CLASS olarak tasarladiginiz bir class varsa
     veya ilerde bu cllass'i parent yapmak isteyenler olabilir diyorsaniz
     ozaman variable ve methodlarin access modifier'ini protected yapmalisiniz
+    bylece sadece child olan class'lar sizden istifade ederken,
+    child olmayanlar sizin variable ve methodlariniza ulasamaz.
     not;JAVA PROTECTED'I INHERITANCE ICIN YAPMISTIR
     en basta public olan variablelari  bizde hepsini degistirelim protected yapalim
      */
