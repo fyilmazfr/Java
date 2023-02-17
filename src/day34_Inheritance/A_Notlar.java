@@ -47,6 +47,16 @@ public class A_Notlar {
         Boylece extends keywords olmayan class'a kadar gider ve oradan baslayarak tum constructor'lari
         asagi dogru calistirir.
 
+    * Eger bir class da extends varsa tum constructorlarin ilk satirinda super(); constructor call vardir
+      Extends keyword kullanilan classlarda ister default constructor bulunsun istersek de biz yeni constructor(lar)
+      olusturulaim Java constructor'in ilk satirina super(); constructor call yazar
+      super(); cons call default cons 'a benzer , gorunmese de orada vardir ve calisir ancak biz ilk satira farkli bir
+      cons call yazarsak Java super(); cons'ini siler.
+
+      Eger biz mudahale edip kendi constructor call'umuzu olusturmassak Java'nin default olarak olusturdugu
+      constructor call her zaman parametresizdir
+      super();
+
 
 
 
