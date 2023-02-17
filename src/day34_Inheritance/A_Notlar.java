@@ -57,6 +57,13 @@ public class A_Notlar {
       constructor call her zaman parametresizdir
       super();
 
+    * this() constructor call, icinde bulunulan class'daki constructorlari,
+          super cons call ise parent class'da bulunan constructorlari cagirir
+
+        this() veya super() parametre yapisina uygun bir constructor bulamazsa? Java CTE verir.
+          construtor konusunda gormedigimiz this. o class'daki instance variable'lari refere ediyordu
+          Inheritence da da super. vardir ve parent class'daki instance'lari refere eder.
+
 
 
 
