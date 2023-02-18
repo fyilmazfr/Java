@@ -98,6 +98,7 @@ public class A_Notlar {
 
 
                   OVERRIDING (Uzerine yazma,gecersiz kilma)
+
     *Child class'daki bir method'un parent class'daki methodu etkisiz kilarak kendisini spesifiklestirmesidir.
     * Child class'daki bir method'un parent class'daki methodu etkisiz kilarak kendisini spesifiklestirmesidir.
         Overriding'i nerede dikkate aliyoruz?
@@ -111,6 +112,16 @@ public class A_Notlar {
         3-Eger aranan ozellik variable ise buldugumuz ilk degeri yazdiririz
         Aranan ozellik method ise degeri yazdirmadan once override edilmis mi diye kontrol etmemiz gerekir
         eger overrride edilmis ise en guncel degeri yazdiririz.
+     *  @Override notasyonu Javaya bir gorev verir ,Java bu notasyonla birbirine bagli olan iki method'u surekli kontrol eder
+         surekli kontrol eder
+         Eger parent class'daki overridden method'u silerseniz java CTE verir
+          kullanmak mecburi degildir eger overrriding method silinirse , kodun CTE vermesini istersek @Override
+          notasyonu kullanmaliyiz
+
+     * Overloading;;
+      Bir class'da ayni isimde ve ayni signature'a sahip iki method olmaz,Ayni class'da ve isimde birden fazla method
+        olusturmak istersek mutlaka signature'i degistirmeliyiz
+        farkli class'larda ayni isme ve signature'a sahip iki method olabilir mi?
 
 
 
