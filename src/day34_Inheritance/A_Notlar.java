@@ -34,6 +34,7 @@ public class A_Notlar {
 
 
                      inheritance'de constructor kullanimi
+
     *Java'da baska bir class'a gidebilmek o class'i kullanabilmek icin o class'in constructor'unu kullanmak
      zorundasiniz.
     * Java'da bir class'i kullanabilmek icin o class'dan obje olusturur,dolayisiyla o class'in constructor'ini
@@ -58,11 +59,62 @@ public class A_Notlar {
       super();
 
     * this() constructor call, icinde bulunulan class'daki constructorlari,
-          super cons call ise parent class'da bulunan constructorlari cagirir
+          super() cons call ise parent class'da bulunan constructorlari cagirir
 
         this() veya super() parametre yapisina uygun bir constructor bulamazsa? Java CTE verir.
           construtor konusunda gormedigimiz this. o class'daki instance variable'lari refere ediyordu
           Inheritence da da super. vardir ve parent class'daki instance'lari refere eder.
+
+    *Bir constructor calistirdigimizda once parent class'daki constructor calisir.cunku her constructor'un
+     ilk satirinda super() keyword vardir(gorunmese bile)
+
+    *super() vethis() constructor cagirmak icin kullanilirlar ve constructo'in ilk satirinda olmalidirlar.Bu durumda
+      bir constructor'da ikisinin birden olmasi mumkun degildir
+     super. ve this. variable cagirmak icin kullanilirlar.ilk satirda olma sarti olmadi gi icin ikisi birlikte kullanila
+      bilirler.
+
+    *constructor calismasi bittginde atanan degerler eski degerlerine doner.
+    * Hangi access modifier'lar inherit edilebilirler?
+        CEVAP; Public ve protected olanlar heryerden, defaul olanlar ayni paketten inherit edilebilir.
+    * super. direk parent class'a gittigi icin eger orda aradigini bulamazsa yani atanan bir deger yoksa CTE verir.Cunku
+       parent class'dan child class'a donmeyecegi icin.
+    * super() ve this() bulunduklari constructor'da ilk sirada olmalidir.
+    * super() ve this() bulunduklari constructor'da AYNI AYNA kullanilamazlar.
+
+                        Inheritance'da Date Type Kullanimi
+    *  BMuhasabe mhsb1=new BMuhasabe();// muhasebe class'indan bir obje olusturduk
+        her nekadar memur class'inin icinde olsak da olusturdugum obje muhasebe class'indan cunku data turu ve
+        constructor BMuhasebe 'den.
+        obje olusturdugumuz her class'da objeden once yazdigimiz(yani sol taraf) class ismi bir data turudur(BMuhasebe)
+
+
+    * BMuhasabe isc1=new DIsci();
+         Bir obje olusturulurken Data turu ve constructor ayni class'dan ise direk o class'a gidiyorduk
+        Eger data turu ve constructor farkli ise?
+        Obje constructor'in oldugu class'in objesidir ancak,bizden istenen Isci class'indaki spesifik ozellikler
+        degil Bir iscinin muhasebe class'indaki tum calisanlarla beraber sahip oldugu genel ozellikleri yazdirir
+    * EGER DATA turu olan class'da aradigimiz ozellik yoksa ,varsa onun parent'ina gidebilir ama child'a donus
+        olmaz . Aradigi ozelligi bulamazsa CTE verir
+
+
+                  OVERRIDING (Uzerine yazma,gecersiz kilma)
+    *Child class'daki bir method'un parent class'daki methodu etkisiz kilarak kendisini spesifiklestirmesidir.
+    * Child class'daki bir method'un parent class'daki methodu etkisiz kilarak kendisini spesifiklestirmesidir.
+        Overriding'i nerede dikkate aliyoruz?
+        Bir obje olusturulurken data turu ve constructor farkli ise
+        Eger bir obje olusturulurken data turu ve constructor farkli ise objenin ozelliklerini belirlerken
+        3 konuya dikkat cekmeliyiz
+
+        1-Obje constructor'in oldugu class'da olusur
+        2-Objenin ozelliklerini aramaya data turunun oldugu class'dan baslariz,bu class'da aranan ozellik
+        bulunamazsa parent class'lara bakilir,ordada bulamazsak CTE verir.
+        3-Eger aranan ozellik variable ise buldugumuz ilk degeri yazdiririz
+        Aranan ozellik method ise degeri yazdirmadan once override edilmis mi diye kontrol etmemiz gerekir
+        eger overrride edilmis ise en guncel degeri yazdiririz.
+
+
+
+
 
 
 
