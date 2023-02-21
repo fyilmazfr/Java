@@ -13,10 +13,10 @@ public class A_Notlar {
     * Methodlar class'in icerisinde main methodun disarisinda olur.
 
     * EGER PARENT CLASS olarak tasarladiginiz bir class varsa
-     veya ilerde bu cllass'i parent yapmak isteyenler olabilir diyorsaniz
-     o zaman variable ve method'larin access modifier'ini protected yapmalisiniz
-     boylece sadece child olan class'lar sizden istifade ederken,
-     child olmayanlar baska package'dan  sizin variable ve methodlariniza ulasamaz.
+       veya ilerde bu cllass'i parent yapmak isteyenler olabilir diyorsaniz
+       o zaman variable ve method'larin access modifier'ini protected yapmalisiniz
+       boylece sadece child olan class'lar sizden istifade ederken,
+       child olmayanlar baska package'dan  sizin variable ve methodlariniza ulasamaz.
     Not;JAVA PROTECTED'I INHERITANCE ICIN YAPMISTIR
 
     *Inheritance sayesinde yazilan bir cod'un tekrar tekrar kullanilabilmesi(reusability) mumkun olabilir.
@@ -117,11 +117,26 @@ public class A_Notlar {
          Eger parent class'daki overridden method'u silerseniz java CTE verir
           kullanmak mecburi degildir eger overrriding method silinirse , kodun CTE vermesini istersek @Override
           notasyonu kullanmaliyiz
+     *cocuk babayi sinirlandiramaz yani accsess modifierda sinirlandirma olmaz ornegin baba public cocuk protected olmaz
+     * private ,static, ve final method'lar overriding yapilamazlar
+     *
 
      * Overloading;;
       Bir class'da ayni isimde ve ayni signature'a sahip iki method olmaz,Ayni class'da ve isimde birden fazla method
         olusturmak istersek mutlaka signature'i degistirmeliyiz
         farkli class'larda ayni isme ve signature'a sahip iki method olabilir mi?
+
+
+                                   POLYMORPHISM (cok sekillilik)
+     * polymorphism=overloading+overriding
+     * overloading static polymorphismdir, +overriding ise bir run time (dynamic) polymorphismdir
+
+
+     not;class'da FINAL gordugumuz zaman artik bu class'in degistirilemeyecegini anlamamiz lazim ve baska bir
+      methoda gitmeye gerek yok
+    *data turu ve constructor ayni ise isimiz cok kolay overriding bakmaya gerek yok
+    eger data tueu ve constructor farkli ise bilmeliyizki overrriding var ve sorulari cozerken dikkat etmeliyiz
+
 
 
 
