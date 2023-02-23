@@ -93,6 +93,33 @@ eger bilmedigim bir exception daha olusursa kodum durmasin istiyorsak birkere da
         }catch (Exception e) {
             System.out.println("ONGORULEMEYEN BIR HATA OLUSTU");
     }
+*NullPointerexception bir run time exception'dir.
+*ArrayIndexOutBoundsException  ; Array veya List'de olmayan bir index icin islem yapmak isterseniz
+Java ArrayIndexOutOfBoundsException verir. ayni zamanda buda bir run time exception'dir.
+
+*Scanner scan=new Scanner(System.in);
+        System.out.println("yasinizi giriniz");
+        int yas=scan.nextInt();
+        try {
+            if (yas<0){
+                throw new IllegalArgumentException();//burada exc firlatmasini istedik throw new ile
+            }else {
+                System.out.println("yasiniz;"+yas);
+            }
+        } catch (IllegalArgumentException e) {
+            e.printStackTrace();
+            System.out.println("yas negatif olamaz");
+        }
+RUN YAPTIK;
+        yasinizi giriniz
+-50
+java.lang.IllegalArgumentException
+	at day39_Exceptions.C05.main(C05.java:16)
+yas negatif olamaz
+
+Process finished with exit code 0
+
+
 *
 
 
