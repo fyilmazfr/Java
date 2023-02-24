@@ -155,7 +155,11 @@ final void finalMethod(){
     }
 
 *final variable --> degeri degistirilmeyecek (constant) variable'lar icin kullanilir
-
+*compile time exception'un diger adi Checked exception dir.
+*FileNotFoundException, IOException'in child class'idir.
+*catch'lerin bir tanesi calisir.ustteki calisirsa alttaki calismaz
+*dikkat; catch blogu calismadiginda hemen altinda bulunan sout da calismaz.
+*throw ile kontrollu exception olustururken parametre olarak istedigimiz hata mesajini girebiliriz.
 
 
 
