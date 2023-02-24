@@ -120,7 +120,41 @@ yas negatif olamaz
 Process finished with exit code 0
 
 
+*EXCEPTION FINALLY BLOCK
+* finally block tr-catch blogu ile kullanilir
+*finally block, her durumda calisir
+*catch bulogu calissada finally calisir, catch blogu calismasada finally calisir
+*finally block catch blogu olmadan sadece try ile de kullanilabilir.
+
+  ***True-False
+try blogu mutlaka catch blogu ile calisir -->FALSE
+Finaly blogumutlaka calisir-->TRUE
+BIR TRY BLOGU ILE BIRDEN FAZLA CATCH BLOGU calistirilabilir-->TRUE
+birden fazla catch blok varsa ,child olan once yazilmalidir--> TRUE
+FileNotFoundExeption nedir? -->> Progrmimizda bir dosyayi okumaya calisiyorken, dosya bulunamazsa olusur.IOException'in
+subclass'idir.
+IOException nedir? -->> Programimizda bir file'a input/output yapiliyorsa ve program calisirken bir problem cikarsa
+olusur.Checked exception'dir ve kod yazilirken mutlaka handle edilmelidir.
+
+     ***GARBAGE COLLECTOR
+*Garbage collector kendi insitiyatifiyle calisir biz kontrol edemeyiz,bilgisayrin ihtiyai varsa calisir.
+GC once calisip buldugu copleri ,kullanilmayan datalari bulur ve Finalized Garbage olarak isaretler.Ve son olarak
+Object Destroyed yaparak copleri toplar
+*finalize() method Garbage COLLECTOR TARAFINDAN IMHA EDILMESI GEREKEN datalar imha edilmeden once calistirilir.
+*Garbage collector sadece finalized yapilmis objeleri toplar ve yokeder.
+
+   ***final-finally-finalized
+*bir variable final olarak tanimlandiysa baska class'lardan veya icinde oldugumuz class'dan bu variable'a baska
+    deger atanmasi mumkun degildir
+    Madem ki degeri degistirilemiyor genelde static de yaparak bu variable'e erisim kolaylastirilabilir
+    Genelde static final olarak belirlenen variable isimleri Buyuk Harfle yazilir.
 *
+final void finalMethod(){
+        System.out.println("final methodlar overrride edilemez");
+        //bir method'u final olarak isaretlerseniz bu method degistirilemez demektir(override edilemez)
+    }
+
+*final variable --> degeri degistirilmeyecek (constant) variable'lar icin kullanilir
 
 
 
