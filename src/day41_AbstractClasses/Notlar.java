@@ -1,6 +1,7 @@
 package day41_AbstractClasses;
 
 public class Notlar {/*
+*Abstract class, genellikle ortk ozellikleri olan nesneleri tek bir cati altinda toplamak icin kullanilir
 *Abstract class(soyut), genellikle ortak ozellikleri olan nesneleri tek bir cati altinda toplamak icin kullanilir.
 *abstractlar bi standart class'laridir.KENDILERINDEN OBJE OLUSTURULMAZ.
 *public abstract C_Abstract {
@@ -60,6 +61,9 @@ abstract olmayan method'lara concrete method denir.abstract bir method'u abstrac
 *Abstract class'lar cosructor barindirir ama obje uretemezler.Abstract bir class'in ozelliklerini tasiyan bir obje
 olusturmak istedigimizde Data turunu istedigimiz abstract class, constructor 'i ise child'i olan concrete bir class'dan
 seceriz.
+*Abstract methodlar priate ,finalveya static olarak tanimlanamaz.Cunku override edilirler.
+*concrete class icinde Abstract method olusturulamaz Java bunu kabual etmez
+* Abstract class'in abstract child'i parent'daki abstract methodlari override etmek zorunda DEGILDIR.
 
 
 
