@@ -1,6 +1,6 @@
 package day43_Iterators;
 
-public class Notlar {/*OTELEME
+public class Notlar {}/*OTELEME
 *Java iterator, collection elemanlarimizin arasina gezinmemize ve elemanlari degistirmemize yarar.
 *Collections'da her element index yapisini desteklemez ,index olmadan tum elementlere ulasmak icin for-each loop
 kullanabiliriz ancak for-each loop ile elementleri kalici olarak degistirme veya silme imkani olmadigi icin Iterator
@@ -47,8 +47,38 @@ liste.listIterator() methodunu kullaniyoruz
 
 
 
-    /*
+
     ListIterator Iterator interface'inin child interface'dir
     ama daha cok method'a sahiptir
-*/
-}
+
+*uzerine aldigi elementi remove() ile silebilir,istersek yazdirabilir veya set() ile degistirebiliriz.
+*Java da iki iterator kullaniriz. iterator class'i sadece 3 method barindirdigi icin cok kullanisli degildir.
+sadece ikeri dogru gider ,remove ile element silebilir veya yazdirabilir
+*ListIterator ise iterato'in child' olmasina ragmen daha fazla method barindirir.Ileri ve geri hareket edbilir,
+set() ile elementleri degistirebiliriz.
+*hasNext() ve hasPrevious() methodlari yaninda element oldugu muddetce bize true dondurur, bu methodlari while loop ile
+kullanarak ileri ve geri olarak tum elementler uzerinde gezinebiliriz
+*Ierator ve ListIterator interface olduklarindan direk obje uretemeyiz, bunun yerine bize iterator veya listIterator
+ dondurecek method'lar kullaniriz.
+ *
+ public static void main(String[] args) {
+        List<Integer> liste=new ArrayList<>();
+        liste.add(2);
+        liste.add(13);
+        liste.add(56);
+        liste.add(23);
+        liste.add(45);
+        liste.add(14);
+        liste.add(40);
+        //sondan basa glebilmek icin once sona gitmek lazim
+        ListIterator li1=liste.listIterator();//listIterator olusturduk
+        System.out.println(liste);
+        while (li1.hasNext()){//bir sonrakinde element olana kadaar,oldugu muddetce devam et
+            li1.next();
+        }
+        //bu loop bizi sona goturur
+        while (li1.hasPrevious()){
+
+            System.out.print(li1.previous()+" ");//40 14 45 23 56 13 2
+       */
+
