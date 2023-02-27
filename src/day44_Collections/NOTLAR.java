@@ -27,7 +27,13 @@ her eleman icinde data ve adress kismi olmak uzere iki kisim vardir
 tum elemanlar pointerlar/adreslr kullanilirak birbirine baglanir
 her eleman Node olarak adlandirilir
 
+*
+    LinkedList<String> ll1=new LinkedList<>();//linkedlist'in kendisinden bir obje olustururuz.
+    List<String> ll2=new LinkedList<>();//data turu olarak list'i sectik ki butun methodlari alabilelim,yani parent class olarak da secmis olduk
+    Queue<String> ll3=new LinkedList<>();//yukardaki ayni seyi yaptik
+    Deque<String> ll4=new LinkedList<>();
 
+* Deque=//double ended Que
 
 
 
