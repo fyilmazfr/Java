@@ -34,6 +34,47 @@ her eleman Node olarak adlandirilir
     Deque<String> ll4=new LinkedList<>();
 
 * Deque=//double ended Que
+*deque iki tarfali queue demektir, dolayisiyla her method'un first ve last'i vardir
+*PriortyQueue constructor'i kullanak que uretirsiniz orn;banka da banka musterisinin sirada oncelikli olmasi
+que icin ayirici ozellik ;elemanlar en sona eklenir ve en bastan silinir, bu sisteme FIFO(First in First Out) denir
+eczaneler ,yemekhaneler bu siteme kullanir
+*que metholari;
+peek ,ilk elemani silmeden bize return eder
+poll, ilk elemani que den siler ve bize return eder
+offer, elman eklemek icin kullanilir
+*deque iki tane sonu olan kuyruk
+hem FIFO hem de LIFO( last in FIRST OUT) gecerlidir
+
+*SETS
+mat kume mantigiyla calisir her element uniquedir
+*java elementleri unique yapmak icin HASH ALGORITMASI kullanir
+
+* OBJECT tum classlarin babasidir
+public class C02_CollectionDataTuru {
+    public static void main(String[] args) {
+        List<String> liste=new ArrayList<>();
+        //liste.add(5);
+        //liste.add('s');
+        //liste.add("ali");
+
+        List<Object> list=new ArrayList<>();
+        list.add(5);
+        list.add('s');
+        list.add(true);
+        list.add("ali");
+
+        System.out.println(list);//[5, s, true, ali]
+
+        0. index'i degistirmeye calistik ve casting yapmak zorunda kaldik
+         list.set(0,(Integer)list.get(0)+5);//[10, s, true, ali]
+
+Colelctions <dataturu> nu object secmemiz durumunda Collection'a farkli data turlerinden objeler koymaniza izin verir
+bu depolama acisindan bize esneklik saglar ancak islem yaparken tum objeleri object olarak tanimladigimizdan cok fazla
+casting yapmamiz gerekebilir
+
+*
+HASHCODE
+
 
 
 
