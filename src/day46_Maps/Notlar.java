@@ -4,7 +4,16 @@ public class Notlar {/*
 *Maps ler key-value pairs kullanir. (anahtar-degerler)
 *Keyler unique olmalidir
 *Map ile ayni ozelliklere sahip birden fazla objeyi ve ozelliklerini store edebilirisniz.
-*Map modern reel uygulamalarda kullandigimiz en guncel halidir.
+*Map modern reel uygulamalarda kullandigimiz en guncel java objesidir.
+*Map'lerde ayni ozelliklere sahip ve ozellikleri ayni bicimde tektiplestirilmis datalar saklayabiliriz
+*Tektiplestirme sonradan datalara ulasabilmek icin onemlidir.
+*Map'e ekleyecegimiz tum ozellikler 2 parcadan (key/value) olusmalidir.key ve value icin data turu sinirlamasi yoktur
+  istedigimiz data turunu secebiliriz.
+*map olustururken key ve value'nun data turune karar vermis olmamiz vee bunu deklare etmemiz gerekir
+*Map'de tum islemler key uzerinden yapilir,bundan dolayi key degrleri unique olmalidir
+*Bir firmada calistigimizda eger map kullaniliyorsa ,map'in data yapisi hep ayni olacaktirBizden istenen herhangi bir
+ gorevi yaparken gorevi bagimsiz methodlarla kurgulamak,ilerde yapacagimiz gorevlerde kolaylik saglayacaktir
+
 *
  Map<Integer,String> sinifList=new HashMap<>(); //
   sinifList.put(101,"Ali, Can, JDev");
