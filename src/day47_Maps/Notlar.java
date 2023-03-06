@@ -1,9 +1,8 @@
 package day47_Maps;
 
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
+import day48_Maps.Students;
+
+import java.util.*;
 
 public class Notlar {/*
 *Maps ler key-value pairs kullanir. (anahtar-degerler)
@@ -157,7 +156,7 @@ Ali=88
 
     1.siz  HashMap<String,Double> salaries=new HashMap<>();yazdiginizda java memory'de 16 kutu(bucket) iceren bir yapi
     olusturur ve bu yapidaki herbir kutuya index verir.Index'ler 0 dan 15 e kadardir
-    2.Siz salaries.put("QA", 110000.0); kodunu yazdiginizda java key iicn bir hascode olusturur bu hashcode'u 15'e boler
+    2.Siz salaries.put("QA", 110000.0); kodunu yazdiginizda java key iicn bir hascode olusturur bu hashcode'u 16'ya boler
     ve kalani index olarak kullanir ve bu elemani o index'e yerlestirir
     3. yerlestirirken 4'lu bir yapi olusturur, bu yapinin ilk bolumune Hashcode'u ikinci bolumune Key'i ucuncu
     bolumune value'u ve dorduncu bolumune pointer'i koyar.bu cok bolumlu yapi LinkedList'lerdeki  "Node" dur.
@@ -168,19 +167,162 @@ Ali=88
     uretilebilir.Buna "Hash Collision" denir.Hash Collision mehur bir Java Development problemidir.bU PROBLEMLE
     karsilasildiginda developer'lar bu problemi cozmek icin kodlar yazarlar,ama bu Core Java'nin konusu degildir
 
+    *******
+
+    package day48_Maps;
+
+import java.util.Hashtable;
+
+public class HashTable01 {
+1. Hash Table bir map'dir.
+2.HashTable EntrySet'leri herhangi bir siralamaya tabi tutmaz
+3.hasTable HashMap'lerden daha yavastir. cunku HashTable'lar thread-safe ve synchronized'dir.
+   thread-safe;Ayni anda birden fazla is yapabilme becerisidir. yani corba piserken salatayi yapabiliyorsunuz, boylelikle
+zamandan tasarruf edebiliyorsunuz.
+   synchronized; coklu islevin zaman kazandiracak sekilde siralanabilmesidir.zamandan kazanabilmek icin once corbayi
+ ardindan da salatayi yapmak gerekir.Tersini yaptigimiz taktirde zamandan kaybederiz.
+ Coklu islerde hasTable daha hizlidir.
+4.HasTable'larda Key null olamaz.NullPointerException atar.
+5.HasTable'larda VALUE null olamaz.NullPointerException atar
+(3,4,5. maddeler hashTable ve hashMap'lerin ayni zamanda farklaridir.interwiev sorusudur)
 
 
+    public static void main(String[] args) {
+        Hashtable<String,Integer> countryPopulations=new Hashtable<>();
+        countryPopulations.put("USA", 400000000);
+        countryPopulations.put("Germany", 83000000);
+        countryPopulations.put("Turkey",90000000);
+
+        System.out.println(countryPopulations);
+        //countryPopulations.put(null,90000000);//HasTable'larda Key null olamaz.NullPointerException atar.
+        //countryPopulations.put("France",null);//HasTable'larda VALUE null olamaz.NullPointerException atar
+
+    package day48_Maps;
+
+    public class Students {
+        public String name;
+        public String email;
+        public int age;
+        public boolean success;
+
+        public Students(String name, String email, int age, boolean success) { //burda bir constructor olusturduk
+            this.name = name;
+            this.email = email;
+            this.age = age;
+            this.success = success;
+        }
+
+        @Override//sag tiklayip, toString methodunu sectik
+        public String toString() {//bu classdan olusturdugumuz objelerin detaylarini toString METHODUYLA konsola yazdirdik
+            return "Students[" +
+                    "name=" + name + '\'' +
+                    ", email=" + email + '\'' +
+                    ", age=" + age +
+                    ", success=" + success +
+                    ']';
+        }
+    }
+    Hashtable<String, day48_Maps.Students> myStudents=new Hashtable<>();
+myStudents.put("Fransizca",new Students("Fatih Yilmaz","fy@hotmail.com",35,true));
+        System.out.println(myStudents);
+//{Fransizca=Students[name=Fatih Yilmaz', email=fy@hotmail.com', age=35, success=true]}
+
+    //sirasiyla istedigimiz bilgileri javadan isteyelim
+    String name =myStudents.get("Fransizca").name;
+        System.out.println(name);//Fatih Yilmaz
+
+    int age=myStudents.get("Fransizca").age;
+        System.out.println(age);//35
+
+        *******
+        public class TreeMap01 {
+
+    1. TreeMap'ler entrySetleri keylere gore "natural order" da siralar ve cok emek ister
+    2.TreeMap'ler en yavas Mapler'dir
+    3.TreeMap'ler thread-safe ve syncronized degildir
+
+    public static void main(String[] args) {
+
+        TreeMap<String, Double> salaries = new TreeMap<>();
+        salaries.put("Tom Hanks", 3000.00);
+        salaries.put("Mary Star", 1000.00);
+        salaries.put("Jimy Jones", 5000.00);
+        salaries.put("Kevin", 6000.00);
+        System.out.println(salaries);//Alfabetik siralama yapti
+        //{Jimy Jones=5000.0, Kevin=6000.0, Mary Star=1000.0, Tom Hanks=3000.0}
 
 
+        SortedMap<String, Double> map1 = salaries.tailMap("Kevin");
+        System.out.println(map1);//{Kevin=6000.0, Mary Star=1000.0, Tom Hanks=3000.0}
+
+        NavigableMap<String, Double> map2 = salaries.tailMap("Kevin", false);
+        System.out.println(map2);//{Mary Star=1000.0, Tom Hanks=3000.0}
+        //Tail kuyruk demektir, map1 de kevin dahil , map2de kevin'siz yazdirdi
 
 
+        NavigableMap<String, Double> map3 = salaries.subMap("Kevin", true, "Tom Hanks", false);
+        System.out.println(map3);//{Kevin=6000.0, Mary Star=1000.0}
 
-        */
+        //lowerEntry BIR ONCEKINI VERIR
+        Map.Entry<String, Double> map4 = salaries.lowerEntry("Mary Star");
+        System.out.println(map4);//Kevin
 
+        //PARIS HILTON OLMASADA SANKI VARMIS GIBI DAVRANIR VE ONCESINI VERIR
+        Map.Entry<String, Double> map5 = salaries.lowerEntry("Paris Hilton");
+        System.out.println(map5);//Mary Star=1000.0
 
+        //salaries.higherEntry()
+        //salaries.floorEntry()
+        //salaries.ceilingEntry()
 
+        *****
+        public class Maps01 {
+    public static void main(String[] args) {
 
+        Size verilen bir cumledeki her kelimenin kac kere kullanildigini gosteren kodu yaziniz
+        "I like to move it,move it."
+        map ile cozecegiz
 
+    String str= "I like to move it, move it.";
+    str=str.replaceAll("\\p{Punct}","");//tum noktalama yi kaldirdik
+        System.out.println(str);//I like to move itmove it
 
+    //kelimeleri almak icin split() kullanalim
+    String[] kelimeler=str.split(" ");//virgulle ayrilan kelimeleri kelimeler array'ine atadik
+        System.out.println(Arrays.toString(kelimeler));//[I, like, to, move, itmove, it]
 
+    HashMap<String,Integer> gorunum=new HashMap<>();//bir hasmap olusturduk
+        for (String w:kelimeler) {
+        Integer gorunumSayisi=gorunum.get(w);
+        if (gorunumSayisi==null){
+            gorunum.put(w,1);
+        }else {
+            gorunum.put(w,gorunumSayisi+1);
+        }
+
+    }
+        System.out.println(gorunum);//{move=2, like=1, I=1, to=1, it=2}
+*/
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

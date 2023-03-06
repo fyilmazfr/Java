@@ -1,0 +1,7 @@
+package day48_Maps;
+
+public class Map02 {/*
+SIZE VERILEN BIR KELIME KULLANILAN HARFLERIN KACAR KERE KULLANILDIGINI GOSTEREN KODU YAZINIZ
+abbcaa===>>> a=3 , b=2 , c=1
+*/
+}
