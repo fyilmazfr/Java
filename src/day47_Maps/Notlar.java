@@ -276,6 +276,8 @@ myStudents.put("Fransizca",new Students("Fatih Yilmaz","fy@hotmail.com",35,true)
         //salaries.ceilingEntry()
 
         *****
+        guzel bir soru;
+
         public class Maps01 {
     public static void main(String[] args) {
 
