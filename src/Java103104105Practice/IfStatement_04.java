@@ -21,7 +21,7 @@ public class IfStatement_04 {
             System.out.println("sayilarin toplami ;"+ (sayi1+sayi2));
         }else if (sayi1<0 && sayi2<0){
             System.out.println("sayilarin carpimi ;"+(sayi1*sayi2));
-        }else if (sayi1<0 && sayi2>0){
+        }else if ((sayi1*sayi2)<0){
             System.out.println("farkli isaretli sayilarla islem yapamazsin ;");
         }else if (sayi1==0 ||sayi2==0)
             System.out.println("sifir carpmaya gore yutan elemandir");
