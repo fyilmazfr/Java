@@ -2,7 +2,7 @@ package Java103104105Practice;
 
 import java.util.Scanner;
 
-public class NestedIfSwitch {
+public class NestedIf_Ternary {
     /*
     kullanicidan sifirdan buyuk pozitif bir tamsayi girmesini isteyin
     girilen  pozitif tamsayi 3 basmakli ise ekrana "3 basamakli yazdirin"
