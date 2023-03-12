@@ -2,7 +2,7 @@ package Java103104105Practice;
 
 import java.util.Scanner;
 
-public class IfStatement_08_Ternary {
+public class IfStatement_08 {
     /*
     kullanicidan 4 basamaklibir sayi girmesini isteyin
     girdigi sayi 5'e bolunuyorsa son rakamini kontrol edin
