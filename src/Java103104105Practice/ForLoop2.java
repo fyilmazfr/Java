@@ -1,8 +1,6 @@
 package Java103104105Practice;
 
-import java.util.Scanner;
-
-public class FoorLoop {
+public class ForLoop2 {
     /*
     kullanicidan bir cumle ve bir harf alin
     cumlede verilen harfin kac kere kullanildigini bulup yazdirin
