@@ -16,7 +16,7 @@ public class Arrays1 {
         String[] arr = str.split("");
         System.out.println(Arrays.toString(arr));
         Arrays.sort(arr);
-        System.out.println(Arrays.toString(arr));
+        System.out.println(Arrays.toString(arr));//siraladik
         int counter = 0;
         for (int i = 1; i < arr.length; i++) {
             if (arr[i - 1].equals(arr[i])) {
