@@ -14,7 +14,7 @@ public class Arrays2 {
     java ile hersey guzel yazcagiz
      */
     public static void main(String[] args) {
-      char s = '5';
+        String s = "5";
         String a = "4";
         String e = "3";
         String I = "1";
@@ -25,7 +25,7 @@ public class Arrays2 {
 
         for (int i = 0; i < arr.length; i++) {
 
-            if (arr[i].contains("s") ) {
+            if (arr[i].contains("s")) {
                 arr[i] = "5";
             }
 
